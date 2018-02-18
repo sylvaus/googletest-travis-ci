@@ -1,0 +1,16 @@
+language: cpp
+sudo: required
+dist: trusty
+compiler: g++
+os: linux
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-5
+
+before_install:
+- ./ci/dependencies.sh
+script:
+- ./ci/build.sh
