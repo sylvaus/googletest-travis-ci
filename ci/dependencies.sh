@@ -3,7 +3,7 @@
 sudo apt-get update
 sudo apt-get install -y libgtest-dev cmake make
 cd /usr/src/gtest
-sudo cmake
+sudo cmake .
 sudo make
 sudo cp ./*.a /usr/lib
 cd $TRAVIS_BUILD_DIR
