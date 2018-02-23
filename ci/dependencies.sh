@@ -1,10 +1,10 @@
 #!/bin/bash
 
 sudo apt-get update
-sudo apt-get install -y libgtest-dev
+sudo apt-get install -y libgtest-dev x
 cd /usr/src/gtest
 sudo cmake
 sudo make
-sudo cp *.a /usr/lib
+sudo cp ./*.a /usr/lib
 cd $TRAVIS_BUILD_DIR
-sudo apt-get install -y libgsl2 gsl-*
+sudo apt-get install -y libgsl* gsl-*
