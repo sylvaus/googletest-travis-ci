@@ -6,5 +6,5 @@ lcov --directory . --capture --output-file coverage.info
 # filter out system
 lcov --remove coverage.info '/usr/*' --output-file coverage.info
 # filter out tests
-lcov --remove coverage.info '../tests/*' --output-file coverage.info
+lcov --remove coverage.info 'tests/*' --output-file coverage.info
 lcov --list coverage.info #debug info
