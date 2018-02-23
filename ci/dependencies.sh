@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt-get update
-sudo apt-get install -y libgtest-dev x
+sudo apt-get install -y libgtest-dev cmake make
 cd /usr/src/gtest
 sudo cmake
 sudo make
