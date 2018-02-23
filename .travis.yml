@@ -16,6 +16,6 @@ script:
 - ./ci/build.sh
 - ./ci/run_tests.sh
 after_success:
-- ./coverage.sh
+- ./ci/coverage.sh
 # Uploading report to CodeCov
 - bash <(curl -s https://codecov.io/bash) || echo "Codecov did not collect coverage reports"
